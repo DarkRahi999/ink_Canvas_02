@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+/*I_---------{  google font-family CDN  }---------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Merienda:wght@300..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Salsa&display=swap');
+
+/*W_----------{  Author      :   Bisakto-Rahi  }----------_*/
+/*W_----------{  Create      :   06/02/2025    }----------_*/
+
+/*G_--------------{  Start Default Style For all  }--------------_*/
+/*-_----------{  My Color Variables  }----------_*/
+:root {
+  --danger: #dc3545;
+  --red: #fc2a1b;
+  --dark-red:#db2a1d;
+  --pink: #e83e8c;
+  --purple: #6f42c1;
+  --indigo: #6610f2;
+  --primary: #0d6efd;
+  --blue: #008cff;
+  --dark-blue: #17a2b8;
+  --light-blue: #0dcaf0;
+  --light-green: #20c997;
+  --success: #198754;
+  --light-green: #28a745;
+  --yellow: #ffc107;
+  --orange: #fd7e14;
+  --highlight-x: #fff3cd;
+  --highlight-y: #ffff5b;
+  --black: #000;
+  --dark: #212529;
+  --gray: #6c757d;
+  --white: #ffffff;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --light-border-color: #dee2e6;
+  --dark-border-color: #6c757d;
+  /*-_----------{  Website theme Color Variables  }---------_*/
+  --Primary-1: #008cff;
+  /*-_----------{  Website Font Variables  }----------_*/
+  --font-1: "Salsa", cursive;
+  --font-2: "Caveat", cursive;
+  --font-3: "Caveat Brush", cursive;
+  --font-4: "Merienda", cursive;
+  --font-5: "Merriweather", serif;
+}   /*R_----------{  Last Update   :   07/02/2025   }---------_*/
+/*O_----------{ Some Font Class  }---------- */
+*{
+  font-family: var(--font-1);
+}        /*Y_----------{  Font weight : 0nly 400 are available  }---------- */
+p{
+  font-family: var(--font-2);
+  font-weight: 500;
+}        /*Y_----------{  Font weight : 400 - 700	are available  }---------- */
+.sub-heading{
+  font-family: var(--font-3);
+}        /*Y_----------{  Font weight : 0nly 400 are available  }---------- */
+.pera{
+  font-family: var(--font-4);
+  font-weight: 600;
+}       /*Y_----------{  Font weight : 300 - 900	are available  }---------- */
+.pera-2{
+  font-family: var(--font-5);
+  font-weight: 500;
+}       /*Y_----------{  Font weight : 400 - 700	are available  }---------- */
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.none{
+  text-decoration: none;
+}
+/*//_--------------{  Start Common Style For all  }--------------_*/
+/*G_-------------{  Common Style for Full-Website  }---------------_*/
+*{
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+:hover,
+:active,
+:focus{
+  outline: 0;
+  outline-offset: 0;
+}
+a,
+a:hover{
+  text-decoration: none;
+}
+body{
+  max-width: 1600px;
+  font-size: 100%;
+  font-family: var(--my-font-1);
+  line-height: 1.5;
+  color: var(--gray-900);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+/*O_----------{  scrollbar style  }---------- */
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--white);
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--black);
+}
+/*//_--------------{  Default Style For all  }--------------_*/
+/*G_--------------{  Start Header Section Style  }--------------_*/
+/*-----{ Navbar style }------ */
+.navbar-nav .nav-item a{
+  font-size: 18px;
+  color: var(--gray-700);
+  font-weight: 600;
+  transition: 0.4s;
+}
+.navbar-nav .nav-item a:hover{
+  font-size: 20px;
+  color: var(--gray-900);
+  font-weight: 700;
+}
+/*O_----------------{  Banner Section style  }---------------- */
+.carousel-inner{
+  height: 100vh;
+}
+.carousel-item img{
+  height: 100%;
+  object-fit: cover;
+}
+/*//_--------------{  Header Section Style  }--------------_*/
+/*y_--------------{  Start Extra Section Style  }---------------_*/
+/*g_-----------------{  Home Page Style  }------------------_*/
+/*-----{ Section heading }------ */
+.heading{
+  font-size: 40px;
+}
+/*O_----------------{  Cover Photo style  }---------------- */
+.about-banner img{
+  height: 350px;
+  width: 100%;
+}
+.img-div img{
+  position: relative;
+}
+.heading-div{
+  position: absolute;
+  top: 200px;
+  left: 70px;
+}
+.heading-div h2{
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--gray-900);
+}
+/*O_-------------{ card common style }-------------- */
+.card-pera{
+  font-family: var(--font-3);
+  color: var(--gray-700);
+}
+.del-taka{
+  color: var(--gray-700);
+  font-size: 24px;
+  font-style: italic;
+}
+.taka{
+  font-size: 36px;
+}
+.btn-g{
+  width: 98%;
+}
+.btn-g .btn{
+  margin: 0px 2%;
+  width: 45%;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease; /* Add transition to the card */
+}
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.1); /* Scale the entire card */
+}
+.card:hover .card-img-top {
+  transform: scale(1.1); /* Scale the image as well */
+}
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+.card:hover{
+	box-shadow: 2px 3px 10px var(--gray-400);
+}
+.col img{
+  position: relative;
+}
+.lable{
+  position: absolute;
+  background-color: green;
+  margin: 4px;
+  border-radius: 4px;
+  border:1px solid black;
+  color: #ffffff;
+  padding: 0px 4px;
+}
+#my-lable{
+  background-color: var(--red);
+}
+/*O_-------------{ about section style }-------------- */
+#my-btn-1{
+  border-radius: 20px;
+  width: 100%;
+}
+.btn-div{
+  width: 20%;
+  margin: auto;
+}
+/*O_-------------{ aside section style }-------------- */
+aside{
+  background-image: url('./Assets/extra-img/background-cover.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
+.aside-items{
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  height: 60vh;
+}
+/*g_----------------{  Product page style  }---------------- */
+/*g_----------------{  Product Details page style  }---------------- */
+/* --=---{ 1st col style}------- */ 
+.bg-gray{
+  background-color: var(--gray-100);
+}
+.detalis img{
+  transition: 0.3s;
+}
+.detalis img:hover{
+  transform: scale(1.2);
+}
+/* --=---{ 2nd col style}------- */ 
+.product-details h6{
+  color: var(--gray-700);
+}
+.product-details .text-italic{
+  font-style: italic;
+  color: var(--gray-900);
+  padding: 4px;
+  font-size: 18px;
+}
+.w-35{
+  width: 35%;
+}
+/* --=---{ 3rd col style}------- */ 
+.description p{
+  font-family: var(--font-1) !important;
+  font-size: 14px;
+  color: var(--gray-800);
+}
+.float-left{
+  float: right;
+}
+.gray-pera{
+  font-size: 18px;
+  /* color: var(--gray-800); */
+}
+
+
+
+/*g_----------------{  Contact Us page style  }---------------- */
+.contact-bg{
+  background-color: var(--gray-200);
+}
+.my-label{
+  color: var(--gray-700);
+}
+.my-btn{
+  width: 30%;
+  border-radius: 20px !important;
+  margin-left: 20px;
+}
+/*//_--------------{  Extra Section Style  }-------------_*/
+/*G_--------------{  Start Footer Section Style  }---------------_*/
+footer{
+  background-color: var(--black);
+  color: var(--white);
+  padding-bottom: 0px;
+}
+.footer{
+  padding: 30px 10px 0px 10px;
+}
+.footer .row h2{
+  font-family:"Merienda", cursive;
+  font-size: 35px;
+  text-decoration: underline;
+  padding-bottom: 25px;
+}
+.footer .row a{
+  text-decoration: none;
+  color: var(--white);
+  line-height: 1.8;
+}
+.footer .row a:hover{
+  color: #2a7fff;
+  font-size: 18px;
+}
+.footer .row .links a{
+  text-decoration: underline;
+}
+.footer .row .links a:hover{
+  text-decoration: none;
+}
+.footer .row .address h6{
+  transition: 0.6s;
+  margin-left: 14px;
+  padding-bottom: 20px;
+}
+.footer .row .address h6:hover{
+  color: var(--red);
+}
+.footer .row #f-hr {
+  padding: 20px;
+}
+.footer .row p{
+  padding-top: 20px;
+}
+/*//_--------------{  Footer Section Style  }--------------_*/
